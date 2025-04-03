@@ -54,9 +54,8 @@ const AuthForm = ({type}:{type:FormType}) => {
             <div className="flex flex-row gap-2 justify-center">
                 <Image src="/logo.svg" alt="logo" height={32} width={38}/>
                 <h2 className="text-primary-100">PrepWise</h2>
-            
-            <h3>Practice job interview with AI</h3>
         </div>
+            <h3>Practice job interview with AI</h3>
         <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className=" w-full space-y-6 mt-4 form">
         {!isSignIn && (
