@@ -1,7 +1,7 @@
 import InterviewCard from "@/components/InterviewCard";
 import { Button } from "@/components/ui/button";
-import { dummyInterviews } from "@/constants";
-import { getCurrentUser, getInterviewByUserId, getlatestInterviews } from "@/lib/actions/auth.action";
+import { getCurrentUser} from "@/lib/actions/auth.action";
+import { getInterviewByUserId,getlatestInterviews } from "@/lib/actions/general.action";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -57,7 +57,7 @@ const Page = async() => {
                 <InterviewCard {...interview} key={interview.id} />
               ))
             ):(
-              <p>There are no new Interview available</p>
+              <p>There are no new Interview available </p>
             )
           }
         </div>
